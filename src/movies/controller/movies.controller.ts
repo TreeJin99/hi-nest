@@ -8,10 +8,9 @@ import {
   Post,
   Query,
 } from '@nestjs/common';
-import { MoviesService } from './movies.service';
-import { CreateMovieDto } from './dto/create-movie.dto';
-import { UpdateMovieDto } from './dto/update-movie.dto';
-import { Movie } from './entities/movie.entity';
+import { MoviesService } from '../service';
+import { CreateMovieDto, UpdateMovieDto } from '../dto';
+import { Movie } from '../entities';
 
 @Controller('movies')
 export class MoviesController {
